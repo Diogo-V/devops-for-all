@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:  # Provides information about the object but does not alter its behavior
+  name: db
+  labels:  # Labels are mostly used in controllers
+    type: db
+    vendor: MongoLabs
+spec:
+  containers:
+  - name: db
+    image: mongo:3.3  # Image to use
+    command: ["mongod"]  # Command to run once the container starts
+    args: ["--rest", "--httpinterface"]  # Arguments to pass to the command
