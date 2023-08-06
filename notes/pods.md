@@ -20,3 +20,4 @@ Contains common notes about pods.
 * Describe pod `kc describe pod <my pod name>`
 * Exec into pod `kubectl exec <my pod name> -- ps aux`
 * Multiple containers in a pod `kubectl exec -it -c <container name> <pod name> -- ps aux`
+* Show labels attached to a pod `kc get pods --show-labels`
