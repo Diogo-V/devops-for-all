@@ -10,3 +10,4 @@ The command `kubectl` will be shortened to `kc`.
 * List current clusters: `k3d cluster list`
 * Stop all clusters: `k3d cluster stop --all`
 * Start cluster: `k3d cluster start <name of the cluster>`
+* Delete everything: `k3d cluster delete <name of the cluster> --all`

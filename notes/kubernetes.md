@@ -10,3 +10,5 @@ Notes about kubernetes
   * *Kubelet runs on each node*. Its primary function is to make sure that assigned pods are running on the node. It watches for any new Pod assignments for the node.
 
 * All other components interact with API server and keep watch for changes. Most of the coordination in Kubernetes consists of a component writing to the API Server resource that another component is watching. The second component will then react to changes almost immediately.
+
+* *Liveness probe* can be used to confirm whether a container should be running or not. If not running, kubernetes will kill the container and restart it
