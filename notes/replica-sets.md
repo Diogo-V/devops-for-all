@@ -1,4 +1,4 @@
-# Notes about pods
+# Notes about ReplicaSets
 
 Contains common notes about replica sets.
 

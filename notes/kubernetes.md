@@ -12,3 +12,5 @@ Notes about kubernetes
 * All other components interact with API server and keep watch for changes. Most of the coordination in Kubernetes consists of a component writing to the API Server resource that another component is watching. The second component will then react to changes almost immediately.
 
 * *Liveness probe* can be used to confirm whether a container should be running or not. If not running, kubernetes will kill the container and restart it
+
+* The *Readiness probe* should be used as an indication that the service is ready to serve requests. When combined with Services construct, only containers with the readinessProbe state set to Success will receive requests.

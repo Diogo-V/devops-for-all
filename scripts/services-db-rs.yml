@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: go-demo-2-db  # This name gets put in the DNS
+spec:
+  selector:
+    matchLabels:  # Since selector labels need to be unique, we changed them slightly. The service is still go-demo-2, but the type was changed to db.
+      type: db
+      service: go-demo-2
+  template:
+    metadata:
+      labels:
+        type: db
+        service: go-demo-2
+        vendor: MongoLabs
+    spec:
+      containers:
+      - name: db
+        image: mongo:3.3
+        ports:
+        - containerPort: 28017
