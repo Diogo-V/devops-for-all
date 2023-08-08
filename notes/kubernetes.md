@@ -14,3 +14,5 @@ Notes about kubernetes
 * *Liveness probe* can be used to confirm whether a container should be running or not. If not running, kubernetes will kill the container and restart it
 
 * The *Readiness probe* should be used as an indication that the service is ready to serve requests. When combined with Services construct, only containers with the readinessProbe state set to Success will receive requests.
+
+* Almost everything in Kubernetes is operated using label selectors. It’s just that sometimes that is obscured from us.
