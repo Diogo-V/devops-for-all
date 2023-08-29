@@ -11,3 +11,4 @@ The command `kubectl` will be shortened to `kc`.
 * Stop all clusters: `k3d cluster stop --all`
 * Start cluster: `k3d cluster start <name of the cluster>`
 * Delete everything: `k3d cluster delete <name of the cluster> --all`
+* Enabling Ingress on k3d: `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.3.0/deploy/static/provider/cloud/deploy.yaml`
